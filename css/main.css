@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: grey;
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    width: 280px;
+    display: block;
+}
+
+.navbar p{
+    color: #EEEEEE;
+}
+
+.navLinks{
+    display: flex;
+    gap: 20px
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.searchBar a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 100px 10dvh;
+
+    height: 90vh;
+    text-align: center;
+    background-image: url(../assets/img/homeHeader.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1{
+    color: #e9ad1c;
+}
+.hero p{
+    color: #FFFFFF;
+}
+
+
+/* FOOTER */
+footer{
+    align-items: center;
+    text-align: left;
+
+    background-color: #FFFFFF;
+    color: gray;
+    padding: 50px 90px;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px ;
+}
+
+.footLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footLinks a{
+    text-decoration: none;
+    color: grey;
+}
+
+.socialLinks{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.socialLogo{
+    width: 80px;
+}
+
+.footerBot{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.footerBot a{
+    text-decoration: none;
+    color: grey;
+}
