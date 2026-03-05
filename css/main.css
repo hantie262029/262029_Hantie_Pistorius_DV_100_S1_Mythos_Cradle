@@ -3,6 +3,10 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3{
+    text-transform: uppercase;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -60,6 +64,37 @@ body{
     color: #FFFFFF;
 }
 
+.cardA{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 90px 20dvh;
+    gap: 85px;
+    height: 80vh;
+    background-color: #002d68;
+    color: #FFFFFF;
+}
+
+.cardA h3{
+    color: #e9ad1c;
+}
+
+.button01{
+    margin-top: 15px;
+    padding: 25px 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #15D5F5;
+    font-size: large;
+}
+
+.button01 a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: bold;
+}
 
 /* FOOTER */
 footer{
@@ -104,6 +139,7 @@ footer{
     justify-content: space-between;
     padding: 30px 0px;
 }
+
 .footerBot a{
     text-decoration: none;
     color: grey;
