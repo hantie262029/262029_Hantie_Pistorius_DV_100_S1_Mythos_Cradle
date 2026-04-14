@@ -481,10 +481,6 @@ doing it a bit more hard-coded */
     padding: 25px 50px;
     border-radius: 15px;
     border: none;
-    color: #ffffff;
-    font-size: large;
-    font-weight: 750;
-    cursor: default;
 }
 
 .buttonCounter {
@@ -493,6 +489,21 @@ doing it a bit more hard-coded */
     color: #ffffff;
     cursor: pointer;
 }
+
+.adoptButtonForm input {
+    /* Text Styling */
+    font-size: large;
+    font-weight: 750;
+    text-align: center;
+    color: #ffffff;
+
+    /* Clearing form styling */
+    background-color: transparent;
+    border: none;
+    cursor: default; /*not entirely sure what cursor behavior need to be*/
+    /* Still need to get rid of the arrows */
+}
+
 .addToCradleButton {
     width: 250px;
     display: flex;
