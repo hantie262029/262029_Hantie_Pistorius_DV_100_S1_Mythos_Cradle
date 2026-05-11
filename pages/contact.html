@@ -131,11 +131,13 @@
                     <!-- Right/ form-->
                     <form>
                         <h2>SEND US A MESSAGE</h2>
+                        <!-- Name -->
                         <div class="formElement">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" for="name" placeholder="Abc" required />
                         </div>
 
+                        <!-- Email -->
                         <div class="formElement">
                             <label for="email">Email address</label>
                             <input
@@ -147,11 +149,13 @@
                                 required />
                         </div>
 
+                        <!-- Subject -->
                         <div class="formElement">
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" rows="1" placeholder="This is optional"></textarea>
                         </div>
 
+                        <!-- Message -->
                         <div class="formElement">
                             <label for="message">Message</label>
                             <textarea
@@ -161,8 +165,28 @@
                                 placeholder="Hi! I'd like to ask about..."
                                 required></textarea>
                         </div>
-                        <button class="buttonBlue buttonBase buttonContact" type="submit">Submit</button>
+
+                        <!-- Submit Button -->
+                        <button class="buttonBlue buttonBase buttonContact" id="submit" type="submit">Submit</button>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Modal/Pop up window -->
+            <div class="modal_container" id="modal_container">
+                <div class="modal cardBlue">
+                    <div class="out">
+                        <div class="code">
+                            <h2>Thank you [blank] for contacting us!</h2>
+                            <p>
+                                Thank you for taking the time to filling out our contact form.<br />
+                                We will be in contact with you soon!
+                            </p>
+                        </div>
+                    </div>
+                    <button class="buttonBase buttonSubmit buttonYellow" id="close">Close me</button>
                 </div>
             </div>
         </section>

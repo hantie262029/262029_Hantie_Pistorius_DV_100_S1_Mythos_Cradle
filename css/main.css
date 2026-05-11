@@ -367,6 +367,37 @@ Contact Page
     margin-left: 10px;
 }
 
+/* Pop up message */
+/* Modal / popup styling */
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(77, 77, 77, 0.75);
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal_container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    border-radius: 35px;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 22px 4px rgba(77, 77, 77, 0.25);
+    text-align: center;
+}
+
 /* About/Adopt Page */
 .aboutHero {
     height: 250px;
