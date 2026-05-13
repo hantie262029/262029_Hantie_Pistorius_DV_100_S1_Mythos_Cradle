@@ -367,35 +367,31 @@ Contact Page
     margin-left: 10px;
 }
 
-/* Pop up message */
-/* Modal / popup styling */
-.modal_container {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Modal / Pop up message */
+/* Modal / popup styling needs to happen in .modal-dialog */
+.modal-dialog {
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(77, 77, 77, 0.75);
-
-    opacity: 0;
-    pointer-events: none;
 }
 
-.modal_container.show {
-    opacity: 1;
-    pointer-events: auto;
+.btn-close a {
+    color: #ffffff;
 }
 
-.modal {
+.modal-content {
+    box-shadow: 0 10px 14px rgba(77, 77, 77, 0.825);
     border-radius: 35px;
-    padding: 30px 50px;
-    width: 600px;
-    max-width: 100%;
-    box-shadow: 0 22px 4px rgba(77, 77, 77, 0.25);
+    padding: 20px 30px;
     text-align: center;
+    border: none;
+}
+
+.modal-title {
+    font-family: "Metamorphous", sans-serif;
+    line-height: 1.8;
+    color: #e9ad1c;
 }
 
 /* About/Adopt Page */
@@ -457,6 +453,20 @@ Contact Page
     justify-content: center;
     align-items: baseline;
     gap: 20px;
+}
+
+/* Removes arrows/spinboxes for all numeric inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    pointer-events: none;
 }
 
 /* Adopt Cards */

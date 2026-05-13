@@ -6,4 +6,8 @@
 
 ### Modal/ pop up message on thank you
 
-- https://youtu.be/XH5OW46yO8I
+- https://youtu.be/XH5OW46yO8I <!-- Not using this but rather using bootstrap -->
+
+### Removing arrows/spinboxes for all numeric inputs
+
+- https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp

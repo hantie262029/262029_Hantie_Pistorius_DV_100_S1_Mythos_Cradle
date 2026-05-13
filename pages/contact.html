@@ -129,7 +129,7 @@
             <div class="contactRight">
                 <div class="contactForm">
                     <!-- Right/ form-->
-                    <form>
+                    <form name="filledForm">
                         <h2>SEND US A MESSAGE</h2>
                         <!-- Name -->
                         <div class="formElement">
@@ -169,24 +169,6 @@
                         <!-- Submit Button -->
                         <button class="buttonBlue buttonBase buttonContact" id="submit" type="submit">Submit</button>
                     </form>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!-- Modal/Pop up window -->
-            <div class="modal_container" id="modal_container">
-                <div class="modal cardBlue">
-                    <div class="out">
-                        <div class="code">
-                            <h2>Thank you [blank] for contacting us!</h2>
-                            <p>
-                                Thank you for taking the time to filling out our contact form.<br />
-                                We will be in contact with you soon!
-                            </p>
-                        </div>
-                    </div>
-                    <button class="buttonBase buttonSubmit buttonYellow" id="close">Close me</button>
                 </div>
             </div>
         </section>
@@ -242,7 +224,24 @@
             </div>
         </footer>
 
+        <!-- Modal -->
+        <div class="modal" id="formModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content cardBlue">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Thank you for contacting us!</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body outputContainer">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linking External stuff -->
         <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -250,5 +249,8 @@
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/95fa522762.js" crossorigin="anonymous"></script>
+
+        <!-- Javascript -->
+        <script src="../js/script.js"></script>
     </body>
 </html>

@@ -94,10 +94,21 @@
 
             <form class="sortForm">
                 <label for="showQuant">Show</label>
-                <input type="number" id="showQuant" name="showQuant" value="6" min="1" max="32" />
+                <select id="showQuant" name="showQuant">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                </select>
+
                 <label for="sortType">Sort by</label>
                 <select id="sortType" name="sortType">
                     <option value="default">Default</option>
+                    <option value="rating">Rating</option>
+                    <option value="priceLow">Price: Lowest</option>
+                    <option value="priceHigh">Price: Highest</option>
+                    <option value="latest">Latest</option>
                     <option value="random">Random</option>
                 </select>
             </form>
@@ -147,7 +158,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardBlue">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantAzuron')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
 
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
@@ -161,7 +174,9 @@
                         </form>
 
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantAzuron')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -240,7 +255,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardYellow">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantKitsune')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
 
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
@@ -254,7 +271,9 @@
                         </form>
 
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantKitsune')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -332,7 +351,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardBlue">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantAurelia')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
                             <input
@@ -344,7 +365,9 @@
                                 max="50" />
                         </form>
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantAurelia')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -424,7 +447,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardYellow">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantLumina')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
 
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
@@ -438,7 +463,9 @@
                         </form>
 
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantLumina')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -517,7 +544,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardBlue">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantStarwind')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
 
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
@@ -531,7 +560,9 @@
                         </form>
 
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantStarwind')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -611,7 +642,9 @@
                     <!-- Counter 'Button' -->
                     <div class="adoptCounterDiv cardYellow">
                         <!-- Minus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-minus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('minus', 'adoptQuantBriar')">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
 
                         <!-- Dynamic counter input-->
                         <form class="adoptButtonForm">
@@ -625,7 +658,9 @@
                         </form>
 
                         <!-- Plus -->
-                        <button class="buttonCounter"><i class="fa-solid fa-plus"></i></button>
+                        <button class="buttonCounter" onclick="countMe('plus', 'adoptQuantBriar')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <!-- Add to Cradle Button -->
                     <div class="addToCradleButton buttonBase buttonBlue">Add to Cradle</div>
@@ -726,5 +761,7 @@
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/95fa522762.js" crossorigin="anonymous"></script>
+
+        <script src="../js/script.js"></script>
     </body>
 </html>
